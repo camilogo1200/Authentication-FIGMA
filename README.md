@@ -1,16 +1,12 @@
 # figma
 
-A new Flutter project.
 
-## Getting Started
+## Description 
 
-This project is a starting point for a Flutter application.
+A new Flutter project, based on this [figma community file](https://www.figma.com/file/TLIAAbWzyl4mF05YrQzgf9/Login-Mobile-App-(Community)?node-id=3-83&t=uuXbu95nhsVgkNnJ-0)
 
-A few resources to get you started if this is your first Flutter project:
+## Images
+![image](https://user-images.githubusercontent.com/456256/231915502-c93bf87d-0580-4fef-8366-f53c0cea177f.png)
+![image](https://user-images.githubusercontent.com/456256/231915529-a93419c3-3b9b-439e-83be-1f7f19f9b8eb.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
