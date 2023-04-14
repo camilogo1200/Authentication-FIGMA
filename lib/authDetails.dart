@@ -9,30 +9,33 @@ class AuthDetails extends StatelessWidget {
         // the App.build method, and use it to set our appbar title.
         title: Text(""),
       ),
-      body: Center(
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.all(20),
-                child: Image(image: AssetImage('assets/background_2.png')),
-              ),
-              SizedBox(height: 20),
-              const TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Nama Lengkap',
+      body: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.all(30),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.all(20),
+                  child: Image(image: AssetImage('assets/background_2.png')),
                 ),
-              ),
-              SizedBox(height: 20),
-              const TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Email',
+                SizedBox(height: 20),
+                const TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Nama Lengkap',
+                  ),
                 ),
-              ),
+                SizedBox(height: 20),
+                const TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Email',
+                  ),
+                ),
               SizedBox(height: 20),
               const TextField(
                 obscureText: true,
@@ -45,27 +48,31 @@ class AuthDetails extends StatelessWidget {
               const TextField(
                 obscureText: true,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Password',
+                    border: OutlineInputBorder(),
+                    labelText: 'Password',
+                  ),
                 ),
-              ),
-              SizedBox(height: 20),
-              const TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Konfirmassi Password',
+                SizedBox(height: 20),
+                const TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Konfirmassi Password',
+                  ),
                 ),
-              ),
-              SizedBox(
-                  width: 300,
-                  child: ElevatedButton(
-                      onPressed: validateFields,
-                      child: Text(
-                        "Mendafar",
-                        style: TextStyle(color: Colors.white),
-                      )))
-            ]),
+                SizedBox(height: 30),
+                SizedBox(
+                    width: 300,
+                    child: ElevatedButton(
+                        onPressed: validateFields,
+                        child: const Text(
+                          "Mendafar",
+                          style: TextStyle(color: Colors.white),
+                        )))
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
